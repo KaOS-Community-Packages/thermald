@@ -7,9 +7,8 @@ arch=('x86_64')
 url='https://github.com/01org/thermal_daemon'
 license=('GPL2')
 makedepends=('systemd')
-depends=('dbus-glib>=0.94' 'libxml2>=2.4')
+depends=('dbus-glib' 'libxml2')
 backup=('etc/thermald/thermal-conf.xml')
-provides=('thermald')
 source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/v${pkgver}.tar.gz"
         'modules-load-thermald.conf')
 sha256sums=('566595eb2c56679d463be5a65d612de90968248054122bb390d0bc902ba7b762'
